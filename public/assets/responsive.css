@@ -1,0 +1,362 @@
+/*font size*/
+@media only screen and (max-width: 768px){
+    :root{
+        --font-size-titles: 41px;
+        --font-size-subtitles: 32px;
+        --font-size-h3:22px;
+        --font-size-description:16px;
+        
+    
+    }
+}
+
+/*martin opening rever*/
+
+
+
+@media only screen and (max-width:809px){
+    
+section.opening{
+    
+    display:flex;  
+    flex-direction:column-reverse;
+    max-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#poster{
+    position:absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%), url('./mobile\ opening.jpg');
+    background-size: cover;
+    opacity: 1;
+    z-index: 1;
+   
+}
+.title-rotate ul li{
+    font-size:17px;
+  list-style: none;
+}
+  .header .title-rotate{
+    height:17px;
+    overflow: hidden;
+  }
+@keyframes rotate {
+    0%{
+        margin-top:0px;
+    }
+    32%{
+        margin-top:0px;
+    }
+    33%{
+        margin-top:-18px;
+    } 
+    65%{
+        margin-top:-18px;
+    } 
+    66%{
+        margin-top:-39px;
+    } 
+    99%{
+        margin-top:-39px;
+    } 
+    100%{
+        margin-top:-60px;
+    }
+
+}
+div.header{
+    width: 100vw;
+    
+}
+
+
+h1{
+    text-align: center; 
+    padding-left:0px;   
+}
+}
+@media only screen and (max-width:768px){
+section.opening div.button-container button{
+ width: 90%;   
+ margin-left: 0px;
+}
+
+}    
+
+/*up arrow*/
+@media only screen and (max-width:768px){
+    .arrow-up{
+        height: 50px;
+        width: 50px;
+        bottom: 1rem;
+        right: 1rem;
+        
+        border-radius: 50%;
+        z-index: 999;
+    }
+    .arrow-up img.up{
+        width: 100%;
+        height: 100%;
+       
+    }
+
+}
+
+/*services*/
+@media only screen and (max-width:768px){
+    div.service-content h3{
+        font-size: 21px;
+        text-align: start;
+        margin-top: 21px;
+
+    }
+    div.service{
+        padding-bottom: 24px;
+    }
+    div.service-content p{
+        text-align: start;
+        font-size: 16px;
+    }
+    section.services h2{
+        padding-bottom: 25px;
+    }
+    div.service-content{
+        width:90%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding:0;
+    }
+    section.services{
+        padding: 48px 25px 24px 25px;
+        
+    }
+    div.service-image{
+        width: 100%;
+    }
+    div.service-image img{
+        width: 90%;
+        height: 90%;
+    }
+    section.services > div:nth-child(3) div.service-image{
+        order: 1;
+    }
+    section.services > div:nth-child(3) div.service-content{
+        order: 2;
+    }
+}
+
+/*about*/
+
+@media only screen and (min-width:1176px) and (max-width:1300px){
+    div.bio{
+        padding-right: 24px;
+    }
+}
+@media only screen and (max-width:1130px){
+    div.bio{
+        
+        text-align: start;
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto 21px;
+    }
+    div.bio p{
+        font-size: 16px;
+    }
+    div.bio h2{
+        padding-bottom:5px;
+        padding-top:21px;
+    }
+
+    section.about{
+        padding:48px 25px;
+    }
+    section.about div.bio{  
+        order:2;        
+    }
+    .members{
+        display: block;
+        max-width: 400px;
+    }
+    .member{
+        width: 300px;
+        height: 300px;
+        margin: 10px auto 21px;
+    }
+    .member .front{
+        box-shadow: 1px 5px 5px 1px #fff;
+    }
+    .member .back button.dark{
+        width:250px;
+
+    }
+   
+}
+
+/*tecnologias*/
+@media only screen and (max-width:768px){
+    .slider .slide{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*portfolio*/
+@media only screen and (max-width:768px){
+        ul.portfolio-description li{
+            font-size:16px;
+        }
+        button#learn-more{
+            display: none;
+        }
+    section.portfolio2{
+        background-attachment: unset;
+        padding:48px 0px;
+    }
+    ul.portfolio-description{
+        bottom: 0;
+        font-size:14px;
+        left: 12%;
+        bottom: 1rem;
+    }
+    div.swiffy-slider{
+        width:99%;
+    }
+   
+   
+   
+}
+/*buttons*/
+@media only screen and (max-width:768px){
+    button.light, button.dark{
+        width: 90%;
+    }
+
+
+}
+
+/*menu hamburguesa*/
+@media only screen and (max-width:768px){
+    .ham{
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+         
+       } 
+
+       ul.nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction:column;
+        padding: 85px 0 0 0;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        background-color:rgba(0,0,0,0.8);
+        display: none;
+
+    }
+    ul.nav.active{
+        display: block;
+    }
+     ul li.items{
+       width: 100%;
+       text-align: center;
+       padding: 25px;
+       } 
+       li.items:hover{
+        background-color: #fff;
+        color: #000;
+       }
+
+      
+
+
+}
+
+/*footer*/
+@media only screen and (max-width: 768px){
+    footer{
+        background-attachment: unset;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding: 48px 25px 25px;
+    }
+    div.contact{
+        display: block;
+    }
+    div.contact div.phone{
+        width:100%;
+    }
+    div.contact .social-media {
+        padding-top:11px;
+    }
+    footer > div:nth-child(2) > div.phone{
+        margin-left:0;
+    }
+}
+
+/*contact form*/
+@media only screen and (max-width:768px){
+   
+    p.close-contact{
+        
+        top:2rem;
+        
+    }
+    div.form{
+        padding: 60px 25px 48px 25px;
+        width: 100%;
+        height: 100%;
+
+    }
+    h3.form-titles, p.form-titles{
+        padding: 15px 0;
+        width: 100%;
+
+    }
+   
+    input.field{
+        width: 100%;;
+    }
+    label{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    span.success{
+        width:100%;        
+    
+    }
+    .contact-form{
+        overflow-y: scroll;
+        
+        
+    }
+    .contact-container{
+        height: auto;
+    }
+
+}
+
+/*portofolio poopup*/
+@media only screen and (max-width:768px){
+    div.list-portfolio-item{
+        width:100%;
+        padding:21px 25px;
+    }
+    section.portfolio-popup{
+        z-index: 9999;
+    }
+    div.list-portfolio-item button{
+        width: 100%;
+    }
+}
