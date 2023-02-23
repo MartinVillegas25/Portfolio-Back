@@ -1,0 +1,182 @@
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(13, 8, 65) 3%, rgb(0, 2, 3) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(0 0 0 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+/*form*/
+
+section.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+form{
+    width:100%;
+    max-width: 500px;
+    
+    padding:60px;
+    margin: 40px;
+    background-color: #000;
+    border-radius: 30px;
+    box-shadow: 10px 10px #313131bd;
+    
+    
+}
+
+
+h1{
+    font-size: 65px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Noto Serif Khojki', serif;
+    margin-top: 0;
+
+}
+
+input{
+    font-family: 'Noto Serif Khojki', serif;
+}
+.input-field{
+    position: relative;
+}
+
+.input-field input{
+    width:100%;
+    margin: 40px auto;
+    border: 1px solid rgb(188, 188, 255);
+    padding:5px;
+    border-radius: 10px;
+    background-color: transparent;
+    height:50px;
+    outline: none;
+    font-size: 30px;
+    color: #fff;
+    transition: 0.2s;
+}
+.input-field label{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 25px;
+    color:rgb(188, 188, 255);
+    pointer-events: none;
+    transition: 0.2s;
+
+}
+
+.input-field input:focus ~ label, .input-field input:valid ~ label {
+    top:-50px;
+    left:0;
+    color: #9391b3;
+    font-size: 20px;
+}
+.input-field input:focus{
+    border-color:#5cb0ff;
+    background-color: #242029;
+}
+
+.field{
+    width:60%;
+    margin: 10px auto;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding:5px;
+    border-radius: 10px;
+    background-color: transparent;
+    height:50px;
+}
+
+label{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 11px;
+    padding-top: 21px;
+}
+
+input.dark:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+input.dark{
+    border-color:#fff;
+    color:#fff;
+    background-color: transparent;
+    padding:21px 42px;
+    font-family: var(--font-family-titles);
+    font-weight: 700;
+    margin-top:21px;
+    margin: auto;
+    font-size: var(--font-size-description);
+    text-transform: uppercase;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    
+}

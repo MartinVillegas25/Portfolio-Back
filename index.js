@@ -1,21 +1,13 @@
-const express = require('express');
-const app = express();
+require('dotenv').config();
+
+const Server = require('./models/server')
+const server = new Server();
 
 
-//handerbar
-app.set('view engine', 'hbs');
+server.listen();
 
-//static routes
 
-app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.render('home');
-});
-
-app.listen(8080, () => {
-    console.log('listening on port 8080');
-});
 
 
 
